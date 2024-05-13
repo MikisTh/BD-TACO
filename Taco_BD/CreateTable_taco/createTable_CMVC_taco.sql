@@ -1,4 +1,7 @@
 CREATE TABLE ComposicaoCentesimal(
+    'Id_Alimento' varchar(20),
+    'CategoriaAlimento' varchar (20),
+    'DescricaoAlimento' varchar (200),
     'Umidade' varchar(20),
     'EnergiaKcal' varchar(20),
     'EnergiaKj' varchar(20),
@@ -24,7 +27,7 @@ CREATE TABLE ComposicaoCentesimal(
     'Riboflavina' varchar(20),
     'Piridoxina' varchar(20),
     'Niacina' varchar(20),
-    'AcidoAscorbico' varchar(20),
-    
+    'AcidoAscorbico' varchar(20),    
+    FOREIGN KEY (Id_Alimento) REFERENCES Taco (Id_Alimento)
 
 );

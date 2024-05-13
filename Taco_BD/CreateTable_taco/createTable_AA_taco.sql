@@ -1,4 +1,7 @@
 CREATE TABLE Aminoacidos(
+    'IdAlimento' varchar(20),
+    'CategoriaAlimento' varchar (20),
+    'DescricaoAlimento' varchar (200),
     'Triptofano' varchar(20),
     'Treonina' varchar(20),
     'Isoleucina' varchar(20),
@@ -16,5 +19,6 @@ CREATE TABLE Aminoacidos(
     'AcidoGlutamico' varchar(20),
     'Glicina' varchar(20),
     'Prolina' varchar(20),
-    'Serina' varchar(20),
+    'Serina' varchar(20),    
+    FOREIGN KEY (Id_Alimento) REFERENCES Taco (Id_Alimento)
 );
