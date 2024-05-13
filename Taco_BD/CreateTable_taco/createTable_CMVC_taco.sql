@@ -1,3 +1,5 @@
+.import alimentos.csv alimentos
+
 CREATE TABLE ComposicaoCentesimal(
     'Id_Alimento' varchar(20),
     'CategoriaAlimento' varchar (20),

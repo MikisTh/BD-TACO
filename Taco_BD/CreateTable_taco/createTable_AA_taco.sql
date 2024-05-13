@@ -1,3 +1,5 @@
+.import aminoacidos.csv aminoacidos
+
 CREATE TABLE Aminoacidos(
     'IdAlimento' varchar(20),
     'CategoriaAlimento' varchar (20),

@@ -1,3 +1,5 @@
+.import acidos-graxos.csv acidos-graxos
+
 CREATE TABLE AcidosGraxos (
     'IdAlimento' varchar(20),
     'CategoriaAlimento' varchar (20),
