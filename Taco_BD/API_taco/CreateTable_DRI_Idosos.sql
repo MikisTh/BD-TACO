@@ -1,7 +1,7 @@
 .import idosos.csv idosos
 
 CREATE TABLE RecomendacaoNutricional (
-    'IdAdolescentes' int PRIMARY KEY AUTOINCREMENT,
+    'IdIdosos' int PRIMARY KEY AUTOINCREMENT,
     'IdRDA' int,
     'IdDieta' int,
     'EnergiaKcal' varchar(20),
