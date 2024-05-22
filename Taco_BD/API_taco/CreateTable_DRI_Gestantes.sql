@@ -1,9 +1,10 @@
 .import gestantes.csv gestantes
 
-CREATE TABLE RecomendacaoNutricional (
+CREATE TABLE RDA_Gestantes (
+  
     'IdGestantes' int PRIMARY KEY AUTOINCREMENT,
-    'IdRDA' int,
-    'IdDieta' int,
+    'Id_RDA' int NOT NULL FOREIGN KEY,
+    'Id_Dieta' int NOT NULL FOREIGN KEY,
     'EnergiaKcal' varchar(20),
     'EnergiaKj' varchar(20),
     'Proteina' varchar(20),
@@ -29,6 +30,7 @@ CREATE TABLE RecomendacaoNutricional (
     'Piridoxina' varchar(20),
     'Niacina' varchar(20),
     'AcidoAscorbico' varchar(20),    
-    FOREIGN KEY (Id_RDA) REFERENCES RDA (Id_RDA)
+    CONSTRAINT fk_PesRDA FOREIGN KEY (Id_RDA) REFERENCES RDA (Id_RDA),
+    CONSTRAINT fk_PesDieta FOREIGN KEY (Id_Dieta) REFERENCES Dieta (Id_Dieta)
 
 );
