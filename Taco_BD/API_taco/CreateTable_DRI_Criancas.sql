@@ -1,9 +1,9 @@
 .import criancas.csv criancas
 
 CREATE TABLE RecomendacaoNutricional (
-    'IdCriancas' integer PRIMARY KEY AUTOINCREMENT,
-    'IdRDA' integer,
-    'IdDieta' integer,
+    'IdCriancas' int PRIMARY KEY AUTOINCREMENT,
+    'IdRDA' int,
+    'IdDieta' int,
     'EnergiaKcal' varchar(20),
     'EnergiaKj' varchar(20),
     'Proteina' varchar(20),
