@@ -1,7 +1,7 @@
 .import alimentos.csv alimentos
 
 CREATE TABLE ComposicaoCentesimal(
-    'Id_Alimento' varchar(20),
+    'IdAlimento' int PRIMARY KEY AUTOINCREMENT,
     'CategoriaAlimento' varchar (20),
     'DescricaoAlimento' varchar (200),
     'Umidade' varchar(20),
