@@ -1,7 +1,7 @@
 .import acidos-graxos.csv acidos-graxos
 
 CREATE TABLE AcidosGraxos (
-    'IdAlimento' varchar(20),
+    'IdAlimento' int PRIMARY KEY AUTOINCREMENT,
     'CategoriaAlimento' varchar (20),
     'DescricaoAlimento' varchar (200),
     'Saturados' varchar(20),
