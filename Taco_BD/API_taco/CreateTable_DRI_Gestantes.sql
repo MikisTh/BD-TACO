@@ -1,8 +1,9 @@
 .import gestantes.csv gestantes
 
 CREATE TABLE RecomendacaoNutricional (
-    'IdRDA' varchar(20),
-    'IdDieta' varchar(20),
+    'IdGestantes' integer PRIMARY KEY AUTOINCREMENT,
+    'IdRDA' integer,
+    'IdDieta' integer,
     'EnergiaKcal' varchar(20),
     'EnergiaKj' varchar(20),
     'Proteina' varchar(20),
