@@ -1,7 +1,7 @@
 .import aminoacidos.csv aminoacidos
 
 CREATE TABLE Aminoacidos(
-    'IdAlimento' varchar(20),
+    'IdAlimento' int PRIMARY KEY AUTOINCREMENT,
     'CategoriaAlimento' varchar (20),
     'DescricaoAlimento' varchar (200),
     'Triptofano' varchar(20),
