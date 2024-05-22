@@ -1,7 +1,7 @@
 
 
 CREATE TABLE Taco (
-    'IdAlimento' varchar(20) PRIMARY KEY,
+    'IdAlimento' int PRIMARY KEY AUTOINCREMENT,
     'CategoriaAlimento' varchar (20),
     'DescricaoAlimento' varchar (200),
 )
