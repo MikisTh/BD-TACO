@@ -1,8 +1,9 @@
 .import lactantes.csv lactantes
 
 CREATE TABLE RecomendacaoNutricional (
-    'IdRDA' varchar(20),
-    'IdDieta' varchar(20),
+    'IdLactantes' int PRIMARY KEY AUTOINCREMENT,
+    'IdRDA' int,
+    'IdDieta' int,
     'EnergiaKcal' varchar(20),
     'EnergiaKj' varchar(20),
     'Proteina' varchar(20),
